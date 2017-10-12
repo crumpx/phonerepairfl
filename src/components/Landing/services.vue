@@ -3,7 +3,8 @@
     <div class="container">
       <h1>repair service Done Right!</h1>
       <div class="services-container">
-        <p class='intro'>We can fix all cell phones, computers, laptops, and game consoles you break or drop in water. We are affordable and quick. Call today or just bring your broken device in for repair today! 407-764-7460.</p>
+        <p class='intro'>We can fix all cell phones, computers, laptops, and game consoles you break or drop in water. We are affordable and quick. Call today or just bring your broken device in for repair today! 407-988-4101
+</p>
         <template v-for="service of Services">
           <a>
             <div class="services-item">

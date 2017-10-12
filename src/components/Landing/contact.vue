@@ -3,7 +3,7 @@
       <div class="container">
         <h1>Get in contact?</h1>
           <h4>Use the form below to reach out to us. Once we receive it, we will reply you as soon as we can.</h4>
-          <form method="POST" action="http://formspree.io/crumpx@gmail.com">
+          <form method="POST" action="http://formspree.io/phonerepairfl@gmail.com">
             <input type="email" name="email" placeholder="Your email"><br>
             <textarea name="message" placeholder="Your message to me"></textarea>
             <button type="submit">Send</button>

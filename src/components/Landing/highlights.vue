@@ -3,6 +3,7 @@
     <div class="container">
       <div class="store-logo">
         <img src="../../assets/logo.jpg" alt="">
+
         <h4>The only way to do great work, is to love what you do!</h4>
       </div>
       <h1>what makes phone repair florida <span class='stronger'> the best?</span></h1>
@@ -38,6 +39,14 @@ export default {
   name: 'highlights',
   data(){
     return {
+      socialLinks: [
+        {link: 'tel:4079884101', icon: 'fa fa-phone-square' },
+        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
+        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
+        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
+        {link: 'https://www.facebook.com/1phoneKissimmee', icon: 'fa fa-facebook' },
+        {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'fa fa-youtube' },
+      ],
       highlights: [
         {title: 'free diagnostics',
         description: "It's always free to see what's going on with your device or computer.",
@@ -61,7 +70,7 @@ export default {
 
 <style lang="sass" scoped>
   .hightlights
-    padding: 40px 0
+    padding: 30px 0
     .container
       max-width: 1200px
       margin: 0 auto
@@ -75,20 +84,33 @@ export default {
           font-weight: bold
           color: #bf0311
       .store-logo
-        @media screen and (max-width: 790px)
-          display: none
         max-width: 960px
         margin: 0 auto
         text-align: center
         img
           width: 240px
-          padding-bottom: 30px
-
+          padding-bottom: 5px
+          // @media screen and (max-width: 900px)
+          //   display: none
         h4
-          margin-top: -12px
-          font-size: 1em
+          margin: 12px
+          font-size: 0.8em
           text-align: center
           text-shadow: 1px 1px #000
+      .social-icons
+        @media screen and (min-width: 900px)
+          display: none
+        // padding: 40px 40px 0px 0px
+        text-align: center
+        a
+          text-decoration: none
+          color: red
+          &:hover
+            color: red
+        i
+          font-size: 1.6em
+          padding: 0px 10px
+
 
       .highlight-container
         display: flex

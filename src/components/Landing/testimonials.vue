@@ -5,30 +5,36 @@
       <div class="testimonials-container">
         <p class='intro'>Kind words from our customers</p>
         <div id="google-reviews"></div>
+
         <div class="review-buttons">
-          <a href="https://www.google.com/search?q=1phone+repair&oq=1phone+repair&aqs=chrome..69i57j69i60l3j0l2.6616j0j4&sourceid=chrome&ie=UTF-8#lrd=0x88dd8426479cc64d:0x7b64eb356a6e1a30,1,," target="_blank">View All Google Reviews</a>
-          <a href="https://www.google.com/search?q=1phone+repair&oq=1phone+repair&aqs=chrome..69i57j69i60l3j0l2.6616j0j4&sourceid=chrome&ie=UTF-8#lrd=0x88dd8426479cc64d:0x7b64eb356a6e1a30,3,," target="_blank">Wite A Review</a>
+          <a href="https://goo.gl/TbkvVx" target="_blank">View All Google Reviews</a>
+          <a href="https://goo.gl/kdQwtb" target="_blank">Wite A Review</a>
         </div>
 
       </div>
-
-
       <div class="social-icons">
-        <a href="https://www.facebook.com/1phoneKissimmee/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/1phoneRepair?ref_src=twsrc%5Etfw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://plus.google.com/+PhoneScreenRepairKissimmee"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        <template v-for='socialLink of socialLinks'>
+          <a :href="socialLink.link" target="_blank"><i :class="socialLink.icon" aria-hidden="true"></i></a>
+        </template>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+
 export default {
-  name: 'about',
+  name: 'testimonials',
   data() {
     return {
-
+      socialLinks: [
+        {link: 'tel:4079884101', icon: 'fa fa-phone-square' },
+        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
+        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
+        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
+        {link: 'https://www.facebook.com/1phoneKissimmee', icon: 'fa fa-facebook' },
+        {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'fa fa-youtube' },
+      ],
 
     }
   }
@@ -90,13 +96,16 @@ export default {
 
 
       .social-icons
-        // padding: 40px 40px 0px 0px
+
         text-align: right
         a
           text-decoration: none
           color: #fff
           &:hover
             color: red
+          &:first-child
+            margin-right: 30px
+
         i
           font-size: 2em
           padding: 0px 10px

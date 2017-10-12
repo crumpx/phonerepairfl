@@ -3,8 +3,9 @@
     <div class="container">
       <h1>about us</h1>
       <div class="about-container">
-        <p class='intro'>PHONE REPAIR is located in Kissimmee, Florida, near Disney and just south of Orlando. We Speak both English & Spanish. We have been saving your electronics from the recycling bin for more than 6 years now. Saved over 10,000 devices while saving you money at the same time. From iPhone repairs, iPods, iPads, tablets, game console and computer repairs, we have quickly and proudly brought them back to life. As a certified technician, I believe there is never a reason to give up hope that your device cannot be saved. No matter the condition, have faith and call Phone Repair for the best service. All my work is 100% guaranteed & most repairs can be fixed while you wait in less than 20 minutes. Call Today! 407-361-8925</p>
-        <div class="our-people">
+        <p class='intro'>PHONE REPAIR is located in Kissimmee, Florida, near Disney and just south of Orlando. We Speak both English & Spanish. We have been saving your electronics from the recycling bin for more than 6 years now. Saved over 10,000 devices while saving you money at the same time. From iPhone repairs, iPods, iPads, tablets, game console and computer repairs, we have quickly and proudly brought them back to life. As a certified technician, I believe there is never a reason to give up hope that your device cannot be saved. No matter the condition, have faith and call Phone Repair for the best service. All my work is 100% guaranteed & most repairs can be fixed while you wait in less than 20 minutes. Call Today! 407-988-4101
+</p>
+        <!-- <div class="our-people">
           <template v-for="person of people">
             <div class="person">
               <img v-bind:src="person.img" alt="">
@@ -13,23 +14,29 @@
               <p>{{person.bio}}</p>
             </div>
           </template>
-        </div>
+        </div> -->
+
+
       </div>
       <div class="social-icons">
-        <a href="https://www.facebook.com/1phoneKissimmee/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/1phoneRepair?ref_src=twsrc%5Etfw"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://plus.google.com/+PhoneScreenRepairKissimmee"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        <template v-for='socialLink of socialLinks'>
+          <a :href="socialLink.link" target="_blank"><i :class="socialLink.icon" aria-hidden="true"></i></a>
+        </template>
+
       </div>
     </div>
   </section>
 </template>
 
 <script>
+
+
 export default {
   name: 'about',
+
   data() {
     return {
+
       people: [
         {
           name: 'Suzanne Rodriguez',
@@ -46,8 +53,16 @@ export default {
           photo: 'https://randomuser.me/api/portraits/women/93.jpg',
           bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repudiandae repellendus, ipsum officia! Error quod ratione repellendus ex id, adipisci, dolorum veritatis hic necessitatibus? Rerum vero aliquid quo ducimus omnis.'
         },
+      ],
 
-      ]
+      socialLinks: [
+        {link: 'tel:4079884101', icon: 'fa fa-phone-square' },
+        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
+        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
+        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
+        {link: 'https://www.facebook.com/1phoneKissimmee', icon: 'fa fa-facebook' },
+        {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'fa fa-youtube' },
+      ],
 
     }
   }
@@ -123,6 +138,8 @@ export default {
           color: #fff
           &:hover
             color: red
+          &:first-child
+            margin-right: 30px
         i
           font-size: 2em
           padding: 0px 10px

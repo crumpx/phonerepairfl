@@ -6,6 +6,7 @@ import router from './router'
 import vueScrollto from 'vue-scrollto'
 
 Vue.use(vueScrollto,{offset: -200})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
