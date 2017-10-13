@@ -47,8 +47,9 @@ export default {
       socialLinks: [
         {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
         {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
-        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
         {link: 'https://www.facebook.com/1phoneKissimmee', icon: 'fa fa-facebook' },
+        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
+        {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'fa fa-instagram' },
         {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'fa fa-youtube' },
       ],
       highlights: [

@@ -59,8 +59,9 @@ export default {
         {link: 'tel:4079884101', icon: 'fa fa-phone-square' },
         {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
         {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
-        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
         {link: 'https://www.facebook.com/1phoneKissimmee', icon: 'fa fa-facebook' },
+        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
+        {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'fa fa-instagram' },
         {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'fa fa-youtube' },
       ],
 
@@ -131,16 +132,17 @@ export default {
               margin-bottom: 10px
 
       .social-icons
-        padding: 40px 40px 0px 0px
-        text-align: right
+        @media screen and (min-width: 375px)
+          display: none
+        padding: 40px 0px 0px 0px
+        text-align: center
         a
           text-decoration: none
           color: #fff
           &:hover
             color: red
-          &:first-child
-            margin-right: 30px
         i
-          font-size: 2em
+          font-size: 1.4em
           padding: 0px 10px
+
 </style>
