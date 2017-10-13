@@ -101,12 +101,12 @@ export default {
       .top-bar-menu
         display: flex
         justify-content: space-between
+        // justify-content: flex-end
         flex-wrap: wrap
-
         align-items: center
 
-        @media screen and (min-width: 900px)
-          display: flex
+        @media screen and (min-width: 375px)
+          // justify-content: space-between
           align-items: center
           margin: 0 auto
 
@@ -125,7 +125,6 @@ export default {
           border-bottom: 1px solid black
           width: 100%
           transition: all 0.3s ease-in
-
 
           ul
             display: inline-block
@@ -157,17 +156,22 @@ export default {
               margin-right: 0
 
         .social-icons
-          @media screen and (min-width: 900px)
+          // display: none
+          @media screen and (min-width: 375px)
             display: block
             // margin-left: 40px
           // display: none
           a
+            display: none
             text-decoration: none
             color: white
             &:hover
               color: red
             &:first-child
               margin-right: 30px
+              display: inline
+            @media screen and (min-width: 375px)
+              display: inline
           i
             font-size: 1.6em
             padding: 0px 10px

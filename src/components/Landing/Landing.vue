@@ -33,7 +33,7 @@ export default {
     Services,
     Faqs,
     Testimonials,
-    Contact
+    Contact,
   }
 }
 </script>

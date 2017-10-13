@@ -1,6 +1,11 @@
 <template lang="html">
   <section class='hightlights'>
     <div class="container">
+      <div class="social-icons">
+        <template v-for='socialLink of socialLinks'>
+          <a :href="socialLink.link" target="_blank"><i :class="socialLink.icon" aria-hidden="true"></i></a>
+        </template>
+      </div>
       <div class="store-logo">
         <img src="../../assets/logo.jpg" alt="">
 
@@ -40,7 +45,6 @@ export default {
   data(){
     return {
       socialLinks: [
-        {link: 'tel:4079884101', icon: 'fa fa-phone-square' },
         {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
         {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
         {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
@@ -98,10 +102,11 @@ export default {
           text-align: center
           text-shadow: 1px 1px #000
       .social-icons
-        @media screen and (min-width: 900px)
+        @media screen and (min-width: 375px)
           display: none
         // padding: 40px 40px 0px 0px
         text-align: center
+        margin-bottom: 10px
         a
           text-decoration: none
           color: red
