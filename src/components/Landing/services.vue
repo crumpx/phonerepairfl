@@ -22,33 +22,28 @@
 </template>
 
 <script>
-  import idevices from '@/assets/idevices.jpg'
-  import andorid from '@/assets/andorid.jpeg'
-  import unlock from '@/assets/unlock.jpeg'
-  import computer from '@/assets/computer.jpeg'
-  import console from '@/assets/console.jpg'
-export default {
+  export default {
   name: 'services',
   data() {
     return {
       Services: [
-      {img: idevices,
+      {img: require('@/assets/idevices.jpg'),
        title: 'iDevices Repair',
 description: "You bring us your iPhone, iPad or iPod and we provide you with a free estimate for the neccessary repairs. We then provide you with a quality replacement part installed by one of our professional technicians. Most repairs can be completed with 20 minutes while you wait."
        },
-      {img: andorid,
+      {img: require('@/assets/andorid.jpg'),
        title: 'Andorid Devices Repair',
 description: "You bring us your Phone or Tablet and we provide you with a free estimate for the neccessary repairs. We then provide you with a quality replacement part installed by one of our professional technicians. Most repairs can be completed with 20 minutes while you wait."
        },
-      {img: unlock,
+      {img: require('@/assets/unlock.jpg'),
        title: 'Carrier Unlock Service',
 description: "Don't you want to take your phone places? Your cellphone company thinks otherwise. That's something we can also help. Free your phones from any carrier company so you truely own your phone that you've paid for. Take your phone places with you."
        },
-      {img: computer,
+      {img: require('@/assets/computer.jpg'),
        title: 'Computer Serivce',
 description: "Wide ranged of services are provided here in our shop or at your office/home. Our technicians are experienced, well-trained and certified to handle anything that could've happened to your home pc or your company's server. From viurs infection to disaster recovery, nothing is too small, or too big for us."
        },
-      {img: console,
+      {img: require('@/assets/console.jpg'),
        title: 'Console Repair',
 description: "A wise man once said: \"We don't stop playing because we grow old; we grow old because we stop playing\". We all want to stay young forever, but our game console will eventually break on us. The companies would only offer so much time for the warranty. Luckly, We are here to resurrect your broken game consoles that would otherwise ended up in landfill."
        },

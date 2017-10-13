@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import vueScrollto from 'vue-scrollto'
+import './assets/js/google-places.min.js'
+import './assets/css/google-places.css'
 
 Vue.use(vueScrollto,{offset: -200})
 
