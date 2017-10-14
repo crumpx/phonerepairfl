@@ -47,7 +47,7 @@ export default {
       socialLinks: [
         {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
         {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
-        {link: 'https://www.facebook.com/1phoneKissimmee', icon: 'fa fa-facebook' },
+        {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'fa fa-facebook' },
         {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
         {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'fa fa-instagram' },
         {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'fa fa-youtube' },
@@ -102,22 +102,20 @@ export default {
           font-size: 0.8em
           text-align: center
           text-shadow: 1px 1px #000
-      .social-icons
-        @media screen and (min-width: 375px)
-          display: none
-        // padding: 40px 40px 0px 0px
-        text-align: center
-        margin-bottom: 10px
-        a
-          text-decoration: none
-          color: red
-          &:hover
+        .social-icons
+          @media screen and (min-width: 375px)
+            display: none
+          // padding: 40px 40px 0px 0px
+          text-align: center
+          margin-bottom: 10px
+          a
+            text-decoration: none
             color: red
-        i
-          font-size: 1.6em
-          padding: 0px 10px
-
-
+            &:hover
+              color: red
+          i
+            font-size: 1.6em
+            padding: 0px 10px
       .highlight-container
         display: flex
         flex-wrap: wrap
