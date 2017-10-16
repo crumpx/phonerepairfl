@@ -102,20 +102,20 @@ export default {
           font-size: 0.8em
           text-align: center
           text-shadow: 1px 1px #000
-        .social-icons
-          @media screen and (min-width: 375px)
-            display: none
-          // padding: 40px 40px 0px 0px
-          text-align: center
-          margin-bottom: 10px
-          a
-            text-decoration: none
+      .social-icons
+        @media screen and (min-width: 375px)
+          display: none
+        // padding: 40px 40px 0px 0px
+        text-align: center
+        margin-bottom: 10px
+        a
+          text-decoration: none
+          color: red
+          &:hover
             color: red
-            &:hover
-              color: red
-          i
-            font-size: 1.6em
-            padding: 0px 10px
+        i
+          font-size: 1.6em
+          padding: 0px 10px
       .highlight-container
         display: flex
         flex-wrap: wrap
