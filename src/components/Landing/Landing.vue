@@ -7,6 +7,7 @@
     <faqs id='faqs'></faqs>
     <testimonials id='testimonials'></testimonials>
     <contact id='contact'></contact>
+    <footers id='footer'></footers>
 
 <!-- <Carousel></Carousel>
 <aboutme  id='aboutme'></aboutme>
@@ -23,6 +24,7 @@ import Services from '@/components/Landing/services'
 import Faqs from '@/components/Landing/faqs'
 import Testimonials from '@/components/Landing/testimonials'
 import Contact from '@/components/Landing/contact'
+import Footers from '@/components/Landing/footer'
 
 
 export default {
@@ -34,6 +36,7 @@ export default {
     Faqs,
     Testimonials,
     Contact,
+    Footers
   }
 }
 </script>

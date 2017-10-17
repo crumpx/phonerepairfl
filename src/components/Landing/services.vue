@@ -119,12 +119,13 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
             box-shadow: 0px 0px 40px 0 #000
             border-radius: 10px
             background: $white
+            cursor: default
           @media screen and (min-width: 1024px)
             width: 40%
             border-bottom: none
           .services-item
             display: flex
-            align-items: center
+            align-items: flex-start
             width: 100%
             border-radius: 4px
             transition: 0.4s
