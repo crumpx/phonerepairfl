@@ -17,7 +17,7 @@
         <template id="" v-for="highlight of highlights">
           <a>
           <div class="highlight-item">
-            <h3>{{highlight.title}}</h3>
+            <h1>{{highlight.title}}</h1>
               <div class="icon">
                <span class="fa-stack fa-4x">
                  <i class="fa fa-circle fa-stack-2x"></i>
@@ -133,7 +133,7 @@ export default {
             margin: 10px 10px
             &:hover
               box-shadow: 0px 0px 40px 0 #000
-            h3
+            h1
               text-transform: uppercase
               text-align: center
               margin: 20px 0

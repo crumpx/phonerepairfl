@@ -10,7 +10,7 @@
             <div class="services-item">
                 <img v-bind:src="service.img" alt="">
                 <div class="service-desc">
-                  <h4>{{service.title}}</h4>
+                  <h1>{{service.title}}</h1>
                   <p>{{service.description}}</p>
                 </div>
             </div>
@@ -142,7 +142,7 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
               @media screen and (min-width: 1024px)
                 padding-left: 40px
                 padding-right: 40px
-              h4
+              h1
                 font-size: 2.2em
                 margin: 20px 0
                 font-weight: 400
