@@ -15,18 +15,18 @@
 
       <div class="highlight-container">
         <template id="" v-for="highlight of highlights">
-          <a>
+
           <div class="highlight-item">
             <h1>{{highlight.title}}</h1>
-              <div class="icon">
+              <!-- <div class="icon"> -->
                <span class="fa-stack fa-4x">
                  <i class="fa fa-circle fa-stack-2x"></i>
                  <i :class="highlight.icon"></i>
                </span>
-             </div>
+             <!-- </div> -->
             <p>{{highlight.description}}</p>
           </div>
-          </a>
+
         </template>
 
 
@@ -121,41 +121,35 @@ export default {
         flex-wrap: wrap
         justify-content: space-around
         align-items: start
-        a
+        .highlight-item
           text-decoration: none
           color: inherit
-          .highlight-item
-            transition: 0.4s
-            width: 250px
-            border: 1px solid black
-            padding: 10px
-            border-radius: 9px
-            margin: 10px 10px
-            &:hover
-              box-shadow: 0px 0px 40px 0 #000
-            h1
-              text-transform: uppercase
-              text-align: center
-              margin: 20px 0
-              font-size: 1.1em
-            .icon
-              text-align: center
-              font-size: 12px
-              margin: 0 auto
-              margin-bottom: 20px
-              span
-                i
-                  color: #ccc
-                  &:hover
-                    color: #fff
-              .fa-circle
-                color: rgb(232,29,98)
-
-
-
-
-
-
+          transition: 0.4s
+          width: 250px
+          border: 1px solid black
+          padding: 10px
+          border-radius: 9px
+          margin: 10px 10px
+          &:hover
+            box-shadow: 0px 0px 40px 0 #000
+          h1
+            text-transform: uppercase
+            text-align: center
+            margin: 20px 0
+            font-size: 1.1em
+          span
+            // text-align: center
+            font-size: 3em
+            line-height: 2em
+            display: block
+            margin: 0 auto
+            margin-bottom: 20px
+            i
+              color: #ccc
+              &:hover
+                color: #fff
+          .fa-circle
+            color: rgb(232,29,98)
           p
             margin-left: 20px
             height: 80px

@@ -2,22 +2,10 @@
   <section class='about'>
     <div class="container">
       <h1>about us</h1>
-      <div class="about-container">
+
         <p class='intro'>PHONE REPAIR is located in Kissimmee, Florida, near Disney and just south of Orlando. We Speak both English & Spanish. We have been saving your electronics from the recycling bin for more than 6 years now. Saved over 10,000 devices while saving you money at the same time. From iPhone repairs, iPods, iPads, tablets, game console and computer repairs, we have quickly and proudly brought them back to life. As a certified technician, I believe there is never a reason to give up hope that your device cannot be saved. No matter the condition, have faith and call Phone Repair for the best service. All my work is 100% guaranteed & most repairs can be fixed while you wait in less than 20 minutes. Call Today! 407-988-4101
 </p>
-        <!-- <div class="our-people">
-          <template v-for="person of people">
-            <div class="person">
-              <img v-bind:src="person.img" alt="">
-              <h5>Hi, my name is</h5>
-              <h3>{{person.name}}</h3>
-              <p>{{person.bio}}</p>
-            </div>
-          </template>
-        </div> -->
 
-
-      </div>
       <div class="social-icons">
         <template v-for='socialLink of socialLinks'>
           <a :href="socialLink.link" target="_blank"><i :class="socialLink.icon" aria-hidden="true"></i></a>
@@ -100,37 +88,15 @@ export default {
         text-align: center
         text-transform: capitalize
         margin: 24px 0
-      .about-container
-        .intro
-          line-height: 1.6em
-          font-size: 1.1em
-          padding: 0 40px
-          &:first-letter
-            font-weight: bold
-            font-size: 4.5em
-            color: #bf0311
-        .our-people
-          display: flex
-          justify-content: center
-          // margin: 40px
-          flex-wrap: wrap
-          .person
-            text-align: center
-            width: 60%
-            margin: 40px
-            @media screen and (min-width: 1024px)
-              width: 25%
-            img
-              width: 120px
-              height: 120px
-              border-radius: 100%
-              border: 1px solid black
-            h5
-              margin: 10px 0
-            h3
-              font-size: 1.6em
-              margin-bottom: 10px
 
+      .intro
+        line-height: 1.6em
+        font-size: 1.1em
+        padding: 0 40px
+        &:first-letter
+          font-weight: bold
+          font-size: 4.5em
+          color: #bf0311
       .social-icons
         @media screen and (min-width: 375px)
           display: none

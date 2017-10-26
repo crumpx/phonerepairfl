@@ -6,7 +6,7 @@
         <p class='intro'>We can fix all cell phones, computers, laptops, and game consoles you break or drop in water. We are affordable and quick. Call today or just bring your broken device in for repair today! 407-988-4101
 </p>
         <template v-for="service of Services">
-          <a>
+
             <div class="services-item">
                 <img v-bind:src="service.img" alt="">
                 <div class="service-desc">
@@ -14,7 +14,7 @@
                   <p>{{service.description}}</p>
                 </div>
             </div>
-          </a>
+
         </template>
       </div>
     </div>
@@ -106,7 +106,7 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
             font-weight: bold
             font-size: 4.5em
             color: #bf0311
-        a
+        .services-item
           text-decoration: none
           color: inherit
           padding: 40px
@@ -114,7 +114,6 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
           transition: 0.8s
           &:last-child
             border-bottom: none
-
           &:hover
             box-shadow: 0px 0px 40px 0 #000
             border-radius: 10px
@@ -123,32 +122,31 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
           @media screen and (min-width: 1024px)
             width: 40%
             border-bottom: none
-          .services-item
-            display: flex
-            align-items: flex-start
-            width: 100%
-            border-radius: 4px
-            transition: 0.4s
-            img
-              width: 120px
-              height: 120px
-              border-radius: 100%
-              display: none
-              border: 1px solid black
-              @media screen and (min-width: 1024px)
-                display: inline-block
-            .service-desc
-              padding-left: 0
-              @media screen and (min-width: 1024px)
-                padding-left: 40px
-                padding-right: 40px
-              h1
-                font-size: 2.2em
-                margin: 20px 0
-                font-weight: 400
-                // text-align: center
-              p
-                line-height: 1.4em
-                font-size: 1.1em
+          display: flex
+          align-items: flex-start
+          width: 100%
+          border-radius: 4px
+          transition: 0.4s
+          img
+            width: 120px
+            height: 120px
+            border-radius: 100%
+            display: none
+            border: 1px solid black
+            @media screen and (min-width: 1024px)
+              display: inline-block
+          .service-desc
+            padding-left: 0
+            @media screen and (min-width: 1024px)
+              padding-left: 40px
+              padding-right: 40px
+            h1
+              font-size: 2.2em
+              margin: 20px 0
+              font-weight: 400
+              // text-align: center
+            p
+              line-height: 1.4em
+              font-size: 1.1em
 
 </style>
