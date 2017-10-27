@@ -8,7 +8,7 @@
 
       <div class="social-icons">
         <template v-for='socialLink of socialLinks'>
-          <a :href="socialLink.link" target="_blank"><i :class="socialLink.icon" aria-hidden="true"></i></a>
+          <a :href="socialLink.link" target="_blank"><icon :name='socialLink.icon' scale='1.5' class=''></icon></a>
         </template>
 
       </div>
@@ -44,13 +44,13 @@ export default {
       ],
 
       socialLinks: [
-        {link: 'tel:4079884101', icon: 'fa fa-phone-square' },
-        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
-        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
-        {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'fa fa-facebook' },
-        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
-        {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'fa fa-instagram' },
-        {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'fa fa-youtube' },
+        {link: 'tel:4079884101', icon: 'phone-square' },
+        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'yelp' },
+        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'google-plus' },
+        {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'facebook' },
+        {link: 'https://twitter.com/phoneRepairf', icon: 'twitter' },
+        {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'instagram' },
+        {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'youtube' },
       ],
 
     }
@@ -103,12 +103,11 @@ export default {
         padding: 40px 0px 0px 0px
         text-align: center
         a
+          padding: 0px 10px
           text-decoration: none
           color: #fff
           &:hover
             color: red
-        i
-          font-size: 1.4em
-          padding: 0px 10px
+
 
 </style>

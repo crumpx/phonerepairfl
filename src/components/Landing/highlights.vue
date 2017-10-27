@@ -3,7 +3,7 @@
     <div class="container">
       <div class="social-icons">
         <template v-for='socialLink of socialLinks'>
-          <a :href="socialLink.link" target="_blank"><i :class="socialLink.icon" aria-hidden="true"></i></a>
+          <a :href="socialLink.link" target="_blank"><icon :name='socialLink.icon' scale='1.5' class=''></icon></a>
         </template>
       </div>
       <div class="store-logo">
@@ -19,11 +19,16 @@
           <div class="highlight-item">
             <h1>{{highlight.title}}</h1>
               <!-- <div class="icon"> -->
-               <span class="fa-stack fa-4x">
-                 <i class="fa fa-circle fa-stack-2x"></i>
-                 <i :class="highlight.icon"></i>
-               </span>
+                 <!-- <span class="fa-stack fa-4x">
+                   <i class="fa fa-circle fa-stack-2x"></i>
+                   <i :class="highlight.icon"></i>
+                 </span> -->
              <!-- </div> -->
+              <icon label='icons'>
+                <icon name="circle" scale="6" color='crimson' class='icons'></icon>
+                <icon :name="highlight.icon" color="lightgray" scale=3 class='icon'></icon>
+              </icon>
+
             <p>{{highlight.description}}</p>
           </div>
 
@@ -45,29 +50,29 @@ export default {
   data(){
     return {
       socialLinks: [
-        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'fa fa-yelp' },
-        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'fa fa-google-plus' },
-        {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'fa fa-facebook' },
-        {link: 'https://twitter.com/phoneRepairf', icon: 'fa fa-twitter' },
-        {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'fa fa-instagram' },
-        {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'fa fa-youtube' },
+        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'yelp' },
+        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'google-plus' },
+        {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'facebook' },
+        {link: 'https://twitter.com/phoneRepairf', icon: 'twitter' },
+        {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'instagram' },
+        {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'youtube' },
       ],
       highlights: [
         {title: 'free diagnostics',
         description: "It's always free to see what's going on with your device or computer.",
-        icon:'fa fa-wrench fa-stack-1x fa-inverse'},
+        icon:'wrench'},
 
         {title: 'LIGHTENING QUICK SERVICE',
         description: "Most repairs can be completed with 20 minutes while you wait.",
-        icon:'fa fa-bolt fa-stack-1x fa-inverse'},
+        icon:'bolt'},
 
         {title: 'AFFORDABLE',
         description: "Our prices are always affordable! Click here to see our pricing list",
-        icon:'fa fa-usd fa-stack-1x fa-inverse'},
+        icon:'usd'},
 
         {title: 'TOP QUALITY SERVICE',
         description: "Quality replacement parts installed by professional technicians.",
-        icon:'fa fa-trophy fa-stack-1x fa-inverse'}, ]
+        icon:'trophy'}, ]
     }
   },
 }
@@ -109,13 +114,11 @@ export default {
         text-align: center
         margin-bottom: 10px
         a
+          padding: 0px 10px
           text-decoration: none
           color: red
-          &:hover
-            color: red
-        i
-          font-size: 1.6em
-          padding: 0px 10px
+
+
       .highlight-container
         display: flex
         flex-wrap: wrap
@@ -130,6 +133,9 @@ export default {
           padding: 10px
           border-radius: 9px
           margin: 10px 10px
+          display: flex
+          flex-direction: column
+          align-items: center
           &:hover
             box-shadow: 0px 0px 40px 0 #000
           h1
@@ -137,22 +143,10 @@ export default {
             text-align: center
             margin: 20px 0
             font-size: 1.1em
-          span
-            // text-align: center
-            font-size: 3em
-            line-height: 2em
-            display: block
-            margin: 0 auto
-            margin-bottom: 20px
-            i
-              color: #ccc
-              &:hover
-                color: #fff
-          .fa-circle
-            color: rgb(232,29,98)
           p
             margin-left: 20px
             height: 80px
+            margin-top: 15px
 
       .call
         padding: 20px 0

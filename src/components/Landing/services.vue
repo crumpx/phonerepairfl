@@ -2,11 +2,11 @@
   <section class='services'>
     <div class="container">
       <h1>repair service Done Right!</h1>
+          <p class='intro'>We can fix all cell phones, computers, laptops, and game consoles you break or drop in water. We are affordable and quick. Call today or just bring your broken device in for repair today! 407-988-4101
+  </p>
       <div class="services-container">
-        <p class='intro'>We can fix all cell phones, computers, laptops, and game consoles you break or drop in water. We are affordable and quick. Call today or just bring your broken device in for repair today! 407-988-4101
-</p>
-        <template v-for="service of Services">
 
+        <template v-for="service of Services">
             <div class="services-item">
                 <img v-bind:src="service.img" alt="">
                 <div class="service-desc">
@@ -90,28 +90,26 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
         margin: 24px 0
         padding-bottom: 20px
         // padding-bottom: 6px
-
+      .intro
+        line-height: 1.6em
+        font-size: 1.1em
+        padding: 40px 40px
+        &:first-letter
+          font-weight: bold
+          font-size: 4.5em
+          color: #bf0311
       .services-container
         box-sizing: border-box
         display: flex
         flex-wrap: wrap
-
-        // justify-content: space-around
         align-items: start
-        .intro
-          line-height: 1.6em
-          font-size: 1.1em
-          padding: 40px 40px
-          &:first-letter
-            font-weight: bold
-            font-size: 4.5em
-            color: #bf0311
         .services-item
           text-decoration: none
           color: inherit
           padding: 40px
           border-bottom: 1px dotted black
           transition: 0.8s
+
           &:last-child
             border-bottom: none
           &:hover
@@ -120,7 +118,7 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
             background: $white
             cursor: default
           @media screen and (min-width: 1024px)
-            width: 40%
+            // width: 40%
             border-bottom: none
           display: flex
           align-items: flex-start
