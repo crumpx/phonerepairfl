@@ -103,6 +103,7 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
         display: flex
         flex-wrap: wrap
         align-items: start
+
         .services-item
           text-decoration: none
           color: inherit
@@ -118,13 +119,16 @@ description: "A wise man once said: \"We don't stop playing because we grow old;
             background: $white
             cursor: default
           @media screen and (min-width: 1024px)
-            // width: 40%
+            width: 40%
             border-bottom: none
+            // border: 1px solid black
+            height: 360px
           display: flex
           align-items: flex-start
           width: 100%
           border-radius: 4px
           transition: 0.4s
+
           img
             width: 120px
             height: 120px
