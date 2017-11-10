@@ -18,12 +18,7 @@
 
           <div class="highlight-item">
             <h1>{{highlight.title}}</h1>
-              <!-- <div class="icon"> -->
-                 <!-- <span class="fa-stack fa-4x">
-                   <i class="fa fa-circle fa-stack-2x"></i>
-                   <i :class="highlight.icon"></i>
-                 </span> -->
-             <!-- </div> -->
+
               <icon label='icons'>
                 <icon name="circle" scale="6" color='crimson' class='icons'></icon>
                 <icon :name="highlight.icon" color="lightgray" scale=3 class='icon'></icon>

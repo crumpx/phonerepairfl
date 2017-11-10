@@ -8,7 +8,7 @@
 
         <template v-for="service of Services">
             <div class="services-item">
-                <img v-bind:src="service.img" alt="">
+                <img v-bind:src="service.img" v-bind:alt="service.title">
                 <div class="service-desc">
                   <h1>{{service.title}}</h1>
                   <p>{{service.description}}</p>
