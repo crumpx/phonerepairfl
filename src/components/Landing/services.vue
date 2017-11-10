@@ -29,22 +29,27 @@
       Services: [
       {img: require('@/assets/idevices.jpg'),
        title: 'iDevices Repair',
+       title_img: 'Phone Repair Kissimmee 1',
 description: "You bring us your iPhone, iPad or iPod and we provide you with a free estimate for the neccessary repairs. We then provide you with a quality replacement part installed by one of our professional technicians. Most repairs can be completed with 20 minutes while you wait."
        },
       {img: require('@/assets/andorid.jpg'),
        title: 'Andorid Devices Repair',
+       title_img: 'Phone Repair Kissimmee 2',
 description: "You bring us your Phone or Tablet and we provide you with a free estimate for the neccessary repairs. We then provide you with a quality replacement part installed by one of our professional technicians. Most repairs can be completed with 20 minutes while you wait."
        },
       {img: require('@/assets/unlock.jpg'),
        title: 'Carrier Unlock Service',
+       title_img: 'Phone Repair Kissimmee 3',
 description: "Don't you want to take your phone places? Your cellphone company thinks otherwise. That's something we can also help. Free your phones from any carrier company so you truely own your phone that you've paid for. Take your phone places with you."
        },
       {img: require('@/assets/computer.jpg'),
        title: 'Computer Serivce',
+       title_img: 'Phone Repair Kissimmee 4',
 description: "Wide ranged of services are provided here in our shop or at your office/home. Our technicians are experienced, well-trained and certified to handle anything that could've happened to your home pc or your company's server. From viurs infection to disaster recovery, nothing is too small, or too big for us."
        },
       {img: require('@/assets/console.jpg'),
        title: 'Console Repair',
+       title_img: 'Phone Repair Kissimmee 5',
 description: "A wise man once said: \"We don't stop playing because we grow old; we grow old because we stop playing\". We all want to stay young forever, but our game console will eventually break on us. The companies would only offer so much time for the warranty. Luckly, We are here to resurrect your broken game consoles that would otherwise ended up in landfill."
        },
 
