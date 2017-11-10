@@ -7,7 +7,7 @@
         <div id="google-reviews"></div>
 
         <div class="review-buttons">
-          <a href="https://goo.gl/TbkvVx" target="_blank">View All Google Reviews</a>
+          <a href="https://goo.gl/aPyFNC" target="_blank">View All Google Reviews</a>
           <a href="https://goo.gl/kdQwtb" target="_blank">Wite A Review</a>
         </div>
 
