@@ -1,4 +1,5 @@
 'use strict'
+const PrerenderSpaPlugin = require('prerender-spa-plugin')
 const path = require('path')
 const utils = require('./utils')
 const webpack = require('webpack')
@@ -26,6 +27,12 @@ const webpackConfig = merge(baseWebpackConfig, {
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [
+    new PrerenderSpaPlugin(
+  // Path to compiled app
+  path.join(__dirname, '../dist'),
+  // List of endpoints you wish to prerender
+  [ '/' ]
+),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': env
