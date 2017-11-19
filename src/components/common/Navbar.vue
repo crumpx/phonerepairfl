@@ -4,7 +4,7 @@
       <div class="container">
         <div class="top-bar-contact">
           <h5>826 E. Vine Street, Kissimmee, FL 34744</h5>
-          <h5><icon name='phone' scale='1' class=''></icon><span> 407-988-4101</span></h5>
+          <h5><icon name='phone' scale='1' class=''></icon><span> 407-883-2117</span></h5>
             <h5><icon name='envelope' scale='1' class=''></icon> <span>phonerepairfl@gmail.com</span></h5>
         </div>
         <div class="top-bar-menu">

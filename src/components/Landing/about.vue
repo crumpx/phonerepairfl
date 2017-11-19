@@ -44,7 +44,7 @@ export default {
       ],
 
       socialLinks: [
-        {link: 'tel:4079884101', icon: 'phone-square' },
+        {link: 'tel:4078832117', icon: 'phone-square' },
         {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'yelp' },
         {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'google-plus' },
         {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'facebook' },

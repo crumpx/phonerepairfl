@@ -7,7 +7,7 @@
             <a :href="socialLink.link" target="_blank"><icon :name='socialLink.icon' scale='1.5' class=''></icon></a>
           </template>
         </div>
-        <h3>Copyright 2017 Phone Repair Orlando, Phone Repair Kissimmee, 407-988-4101, 826 E. Vine Street, Kissimmee, FL 34744, All Rights Reserved.
+        <h3>Copyright 2017 Phone Repair Orlando, Phone Repair Kissimmee, 407-883-2117, 826 E. Vine Street, Kissimmee, FL 34744, All Rights Reserved.
         <h5>Designed / SEO by: <a href="http://crumpz.info" target="_blank">Gang Zhao</a></h5>
   </h3>
       </div>

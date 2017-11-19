@@ -10,7 +10,6 @@
           <a href="https://goo.gl/aPyFNC" target="_blank">View All Google Reviews</a>
           <a href="https://goo.gl/kdQwtb" target="_blank">Wite A Review</a>
         </div>
-
       </div>
       <div class="social-icons">
         <template v-for='socialLink of socialLinks'>
@@ -28,7 +27,7 @@ export default {
   data() {
     return {
       socialLinks: [
-        {link: 'tel:4079884101', icon: 'phone-square' },
+        {link: 'tel:4078832117', icon: 'phone-square' },
         {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'yelp' },
         {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'google-plus' },
         {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'facebook' },
@@ -72,7 +71,6 @@ export default {
         text-transform: capitalize
         margin: 24px 0
       .testimonials-container
-
         .intro
           line-height: 1.6em
           font-size: 1.1em
