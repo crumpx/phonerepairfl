@@ -1,5 +1,6 @@
 <template lang="html">
   <section class='hightlights'>
+
     <div class="container">
       <div class="social-icons">
         <template v-for='socialLink of socialLinks'>
@@ -26,24 +27,50 @@
 
             <p>{{highlight.description}}</p>
           </div>
+          <div class="contact-containter" v-if="showContact">
+            <div class="contact-box">
+              <label for="">First Name</label>
+              <input type="text" name="firstname" v-model='firstname' placeholder="John">
+              <label for="">Last Name</label>
+              <input type="text" name='lastname' v-model='lastname'  placeholder="Smith">
+              <label for="">Phone Number</label>
+              <input type="tel" name='phonenumber' placeholder="123-4567-8901" v-model='phonenumber'>
+              <label for="">Email</label>
+              <input type="email" name='email' v-model='email'  placeholder="Optional">
+              <div class='button-box'>
+                <button v-if="firstname.length>=2 && lastname.length>=2 && phonenumber.length >= 10 " @click="enterContact">✓</button>
+                <button @click='cancelInput'>✖</button></div>
+            </div>
+          </div>
 
         </template>
+      </div>
 
-
+      <div class='callbox'>
+        <a class='call' href="tel:4078832117">Call Now!</a>
+        <a class='signin' @click='showContact=true' >Already Here!</a>
 
       </div>
-      <div class="call">
-        <a href="tel:4078832117">Call Now!</a>
-      </div>
+
+
+
     </div>
   </section>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'highlights',
   data(){
     return {
+      showContact: false,
+      firstname: '',
+      lastname: '',
+      phonenumber: '',
+      email:'',
+      token: 'b1eedb27d8ee6ed61b100cc67be4bb81',
       socialLinks: [
         {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'yelp' },
         {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'google-plus' },
@@ -57,7 +84,7 @@ export default {
         description: "It's always free to see what's going on with your device or computer.",
         icon:'wrench'},
 
-        {title: 'LIGHTENING QUICK SERVICE',
+        {title: 'Fast SERVICE',
         description: "Most repairs can be completed with 20 minutes while you wait.",
         icon:'bolt'},
 
@@ -68,6 +95,57 @@ export default {
         {title: 'TOP QUALITY SERVICE',
         description: "Quality replacement parts installed by professional technicians.",
         icon:'trophy'}, ]
+    }
+  },
+  methods: {
+    cancelInput: function(){
+      this.showContact = false
+      this.firstname = ''
+      this.lastname = ''
+      this.phonenumber = ''
+      this.email = ''
+    },
+    enterContact: function() {
+      let self = this
+      const formData = new FormData()
+      const data = {'contact_name': this.firstname + " " + this.lastname,
+                    'is_taxable': true,
+                  'contact_persons':[
+                    {'first_name':this.firstname,
+                      'last_name':this.lastname,
+                      'email': this.email,
+                    'phone': this.phonenumber,
+                  }
+                  ]}
+
+      formData.append("JSONString", JSON.stringify(data) )
+
+      const url = "https://books.zoho.com/api/v3/contacts?organization_id=658944375"
+      // const headers = {
+      //   "Authorization": 'Zoho-authtoken b1eedb27d8ee6ed61b100cc67be4bb81',
+      //   "Content-Type" : "multipart/form-data"
+      //   }
+        axios.defaults.headers.common['Authorization'] = 'b1eedb27d8ee6ed61b100cc67be4bb81';
+      axios.post(url, formData ).then(function(response) {
+        console.log(response.data.message)
+        if (response.data.code == 0) {
+          self.showContact = false
+        }
+        self.firstname = ''
+        self.lastname = ''
+        self.phonenumber = ''
+        self.email = ''
+      }).catch(function (error) {
+        if (response.data.code == 3062) {
+          self.showContact = false
+          self.firstname = ''
+          self.lastname = ''
+          self.phonenumber = ''
+          self.email = ''
+        }
+  });
+
+
     }
   },
 }
@@ -112,13 +190,13 @@ export default {
           padding: 0px 10px
           text-decoration: none
           color: red
-
-
       .highlight-container
         display: flex
         flex-wrap: wrap
         justify-content: space-around
         align-items: start
+        @media (orientation: landscape) and (min-width: 900px)
+          flex-wrap: nowrap
         .highlight-item
           text-decoration: none
           color: inherit
@@ -142,12 +220,13 @@ export default {
             margin-left: 20px
             height: 80px
             margin-top: 15px
-
-      .call
+      .callbox
         padding: 20px 0
         text-align: center
         margin: 20px 0
-        a
+        position: relative
+
+        .call, .signin
           padding: 17px
           background: rgb(0,191,168)
           margin: 40px auto
@@ -157,7 +236,47 @@ export default {
           color: white
           &:hover
             box-shadow: 0px 0px 10px 0 #000
-
+        .signin
+          background: rgb(220,20,60)
+          cursor: pointer
+          display: none
+          @media (orientation: landscape) and (min-width: 1024px)
+            display: inline
+      .contact-containter
+        position: absolute
+        background: rgba(51,51,51,0.5)
+        z-index: 9999
+        display: flex
+        justify-content: center
+        height: 100vh
+        top: 0
+        bottom: 100
+        left: 0
+        right: 0
+        .contact-box
+          display: flex
+          align-items: left
+          flex-direction: column
+          justify-content: center
+          label
+            font-size: 1.6em
+            padding: 0.4em
+            color: #fff
+          input
+            padding: 10px
+            font-size: 1.2em
+            border-radius: 15px
+            margin-bottom: 10px
+          .button-box
+            width: 100%
+            text-align: right
+            margin-top: 40px
+            button
+              margin-left: 20px
+              font-size: 2em
+              background: transparent
+              border: none
+              color: #fff
 
 
 

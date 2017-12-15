@@ -25,6 +25,7 @@ import 'vue-awesome/icons/circle'
 
 
 
+
 import Icon from 'vue-awesome/components/Icon'
 
 Vue.use(vueScrollto,{offset: -200})
