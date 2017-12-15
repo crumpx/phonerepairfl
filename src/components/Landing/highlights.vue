@@ -110,6 +110,8 @@ export default {
       const formData = new FormData()
       const data = {'contact_name': this.firstname + " " + this.lastname,
                     'is_taxable': true,
+                    
+                    'tax_authority_name': 'FL',
                   'contact_persons':[
                     {'first_name':this.firstname,
                       'last_name':this.lastname,
