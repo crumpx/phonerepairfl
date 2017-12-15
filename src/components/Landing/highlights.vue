@@ -136,7 +136,7 @@ export default {
         self.phonenumber = ''
         self.email = ''
       }).catch(function (error) {
-        if (response.data.code == 3062) {
+        if (error.data.code == 3062) {
           self.showContact = false
           self.firstname = ''
           self.lastname = ''
