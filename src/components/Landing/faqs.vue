@@ -8,7 +8,7 @@
         <template v-for="faq of faqs">
 
             <div class="faq-item">
-              <h4><span class="stronger">Q: </span>{{faq.question}}</h4>
+              <h3><span class="stronger">Q: </span>{{faq.question}}</34>
               <p><span class="stronger">A: </span> {{faq.answer}}</p>
             </div>
 
@@ -138,7 +138,7 @@ export default {
           border-bottom: 1px dotted black
           &:last-child
             border-bottom: none
-          h4
+          h3
             font-size: 1.7em
             margin: 20px 0
             font-weight: 400
