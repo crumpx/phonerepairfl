@@ -27,6 +27,10 @@ export default {
     return {
       faqs: [
       {
+        question: 'How do I find you?',
+        answer: "Most of our customer found us in Google by search 'fix broken iphone screen', 'phone repair near me' and simply, 'cell phone repair'."
+      },      
+      {
         question: 'Are the Repair Technicians at PHONE REPAIR able to repair a water damaged phone?',
         answer: "There is a high success rate in PHONE REPAIR technicians being able to restore electronic devices that have suffered water damage.  A water damaged phone should be brought in to be repaired as soon as possible after the damage occurs."
       },
