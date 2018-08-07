@@ -8,8 +8,8 @@
         <template v-for="faq of faqs">
 
             <div class="faq-item">
-              <h3><span class="stronger">Q: </span>{{faq.question}}</h3>
-              <p><span class="stronger">A: </span> {{faq.answer}}</p>
+              <h2><span class="stronger">Q: </span>{{faq.question}}</h2>
+              <h3><span class="stronger">A: </span> {{faq.answer}}</h3>
             </div>
 
         </template>
@@ -138,12 +138,12 @@ export default {
           border-bottom: 1px dotted black
           &:last-child
             border-bottom: none
-          h3
+          h2
             font-size: 1.7em
             margin: 20px 0
             font-weight: 400
             // text-align: center
-          p
+          h3
             line-height: 1.4em
             font-size: 1.1em
             text-shadow: 1px 1px #000
