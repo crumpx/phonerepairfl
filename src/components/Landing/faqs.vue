@@ -8,7 +8,7 @@
         <template v-for="faq of faqs">
 
             <div class="faq-item">
-              <h3><span class="stronger">Q: </span>{{faq.question}}</34>
+              <h3><span class="stronger">Q: </span>{{faq.question}}</h3>
               <p><span class="stronger">A: </span> {{faq.answer}}</p>
             </div>
 
