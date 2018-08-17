@@ -12,7 +12,7 @@
 
         <h4>We Repair Like Others Can't</h4>
       </div>
-      <h1>what makes iDoktorFixit florida <span class='stronger'> the best?</span></h1>
+      <h1>What Makes iDoktorFixit<span class='stronger'> The Best?</span></h1>
 
       <div class="highlight-container">
         <template id="" v-for="highlight of highlights">
@@ -163,7 +163,7 @@ export default {
         font-weight: 400
         font-size: 2.2em
         text-align: center
-        text-transform: capitalize
+        //text-transform: capitalize
         margin: 24px 0
         .stronger
           font-weight: bold

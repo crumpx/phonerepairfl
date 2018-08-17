@@ -3,7 +3,7 @@
     <div class="container">
       <h1>about us</h1>
 
-        <p class='intro'>iDoktorFixit is located in Kissimmee, Florida, near Disney and just south of Orlando. We Speak both English & Spanish. We have been saving your electronics from the recycling bin for more than 6 years now. Saved over 10,000 devices while saving you money at the same time. From iPhone repairs, iPods, iPads, tablets, game console and computer repairs, we have quickly and proudly brought them back to life. As a certified technician, I believe there is never a reason to give up hope that your device cannot be saved. No matter the condition, have faith and call iDoktorFixit for the best service. All my work is 100% guaranteed & most repairs can be fixed while you wait in less than 20 minutes. Call Today! 407-988-4101
+        <p class='intro'>iDoktorFixit is located in Kissimmee, Florida, near Disney and just south of Orlando. We Speak both English & Spanish. We have been saving your electronics from the recycling bin for more than 6 years now. Saved over 10,000 devices while saving you money at the same time. From iPhone repairs, iPods, iPads, tablets, game console and computer repairs, we have quickly and proudly brought them back to life. As a certified technician, I believe there is never a reason to give up hope that your device cannot be saved. No matter the condition, have faith and call iDoktorFixit for the best service. All my work is 100% guaranteed & most repairs can be fixed while you wait in less than 20 minutes. Call Today! 407-883-2117.
 </p>
 
       <div class="social-icons">
