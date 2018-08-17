@@ -3,7 +3,7 @@
     <div class="container">
       <h1>about us</h1>
 
-        <p class='intro'>PHONE REPAIR is located in Kissimmee, Florida, near Disney and just south of Orlando. We Speak both English & Spanish. We have been saving your electronics from the recycling bin for more than 6 years now. Saved over 10,000 devices while saving you money at the same time. From iPhone repairs, iPods, iPads, tablets, game console and computer repairs, we have quickly and proudly brought them back to life. As a certified technician, I believe there is never a reason to give up hope that your device cannot be saved. No matter the condition, have faith and call Phone Repair for the best service. All my work is 100% guaranteed & most repairs can be fixed while you wait in less than 20 minutes. Call Today! 407-988-4101
+        <p class='intro'>iDoktorFixit is located in Kissimmee, Florida, near Disney and just south of Orlando. We Speak both English & Spanish. We have been saving your electronics from the recycling bin for more than 6 years now. Saved over 10,000 devices while saving you money at the same time. From iPhone repairs, iPods, iPads, tablets, game console and computer repairs, we have quickly and proudly brought them back to life. As a certified technician, I believe there is never a reason to give up hope that your device cannot be saved. No matter the condition, have faith and call iDoktorFixit for the best service. All my work is 100% guaranteed & most repairs can be fixed while you wait in less than 20 minutes. Call Today! 407-988-4101
 </p>
 
       <div class="social-icons">
@@ -45,11 +45,11 @@ export default {
 
       socialLinks: [
         {link: 'tel:4078832117', icon: 'phone-square' },
-        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'yelp' },
-        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'google-plus' },
-        {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'facebook' },
-        {link: 'https://twitter.com/phoneRepairf', icon: 'twitter' },
-        {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'instagram' },
+        {link: 'https://www.yelp.com/biz/idoktorfixit-kissimmee-6', icon: 'yelp' },
+        {link: 'https://plus.google.com/u/0/+iDoktorFixit', icon: 'google-plus' },
+        {link: 'https://www.facebook.com/iDoktorfixit/', icon: 'facebook' },
+        {link: 'https://twitter.com/iDoktorfixit', icon: 'twitter' },
+        {link: 'https://www.instagram.com/idoktorfixit/?hl=en', icon: 'instagram' },
         {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'youtube' },
       ],
 

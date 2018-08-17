@@ -28,11 +28,11 @@ export default {
       faqs: [
       {
         question: 'How do I find you?',
-        answer: "Most of our customer found us in Google by search 'fix broken iphone screen', 'phone repair near me' and simply, 'cell phone repair'."
+        answer: "Most of our customer found us in Google by search 'fix broken iphone screen', 'phone repair near me' and simply, 'cell phone reapir'."
       },      
       {
-        question: 'Are the Repair Technicians at PHONE REPAIR able to repair a water damaged phone?',
-        answer: "There is a high success rate in PHONE REPAIR technicians being able to restore electronic devices that have suffered water damage.  A water damaged phone should be brought in to be repaired as soon as possible after the damage occurs."
+        question: 'Are the Repair Technicians at iDoktorFixit able to repair a water damaged phone?',
+        answer: "There is a high success rate in iDoktorFixit technicians being able to restore electronic devices that have suffered water damage.  A water damaged phone should be brought in to be repaired as soon as possible after the damage occurs."
       },
       {
         question: 'If I really need my item repaired as quickly as possible, how can I be sure your mail-in services are fast enough?',
@@ -43,12 +43,12 @@ export default {
         answer: "Since every kind of repair we perform is different, payment is due upon receipt."
       },
       {
-        question: 'Can PHONE REPAIR backup data on my device?',
-        answer: "Yes!  If you want to backup data stored on your device, you have come to the right place!  IPHONE REPAIR technicians are fully capable of backing up date to ensure you don’t lose any of it."
+        question: 'Can iDoktorFixit backup data on my device?',
+        answer: "Yes!  If you want to backup data stored on your device, you have come to the right place!  iDoktorFixit technicians are fully capable of backing up date to ensure you don’t lose any of it."
       },
       {
-        question: 'Can PHONE REPAIR technicians only repair cell phones or can they repair other electronic devices as well?',
-        answer: "At PHONE REPAIR, we repair cell phones on a daily basis. However, we are fully able to handle all kinds of electronic repairs including tablets, laptops, desktop computers, and gaming systems.  We specialize in iPad, iPod, iPhone repair, Xbox & PlayStation Repairs."
+        question: 'Can iDoktorFixit technicians only repair cell phones or can they repair other electronic devices as well?',
+        answer: "At iDoktorFixit, we repair cell phones on a daily basis. However, we are fully able to handle all kinds of electronic repairs including tablets, laptops, desktop computers, and gaming systems.  We specialize in iPad, iPod, iiDoktorFixit, Xbox & PlayStation Repairs."
       },
       {
         question: 'How much am I expected to pay for shipping when I choose to mail-in my device?',
@@ -60,7 +60,7 @@ export default {
       },
       {
         question: 'My toddler dropped my phone in the toilet.  What do I do?',
-        answer: "Remove the battery if possible, or turn off the phone if not already off immediately.  Bring your liquid damaged item to PHONE REPAIR and we will gladly take over from there!"
+        answer: "Remove the battery if possible, or turn off the phone if not already off immediately.  Bring your liquid damaged item to iDoktorFixit and we will gladly take over from there!"
       },
       {
         question: 'What does the repair price estimate include?  Does it include just the labor?',
@@ -68,7 +68,7 @@ export default {
       },
       {
         question: 'Will my repair cause data loss on my device?',
-        answer: "Sometimes certain damage your electronic device receives may cause data loss, but nothing that IPHONE REPAIR technicians do will cause loss of data."
+        answer: "Sometimes certain damage your electronic device receives may cause data loss, but nothing that IiDoktorFixit technicians do will cause loss of data."
       },
 
       ]

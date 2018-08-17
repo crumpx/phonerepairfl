@@ -10,9 +10,9 @@
       <div class="store-logo">
         <img src="../../assets/logo.jpg" alt="">
 
-        <h4>The only way to do great work, is to love what you do!</h4>
+        <h4>We Repair Like Others Can't</h4>
       </div>
-      <h1>what makes phone repair florida <span class='stronger'> the best?</span></h1>
+      <h1>what makes iDoktorFixit florida <span class='stronger'> the best?</span></h1>
 
       <div class="highlight-container">
         <template id="" v-for="highlight of highlights">
@@ -72,11 +72,11 @@ export default {
       email:'',
       token: 'b1eedb27d8ee6ed61b100cc67be4bb81',
       socialLinks: [
-        {link: 'https://www.yelp.com/biz/1-phone-repair-kissimmee-12', icon: 'yelp' },
-        {link: 'https://plus.google.com/+PhoneScreenRepairKissimmee', icon: 'google-plus' },
-        {link: 'https://www.facebook.com/phonerepairkissimmee/', icon: 'facebook' },
-        {link: 'https://twitter.com/phoneRepairf', icon: 'twitter' },
-        {link: 'https://www.instagram.com/phonerepairkissimmee', icon: 'instagram' },
+        {link: 'https://www.yelp.com/biz/idoktorfixit-kissimmee-6', icon: 'yelp' },
+        {link: 'https://plus.google.com/u/0/+iDoktorFixit', icon: 'google-plus' },
+        {link: 'https://www.facebook.com/iDoktorfixit/', icon: 'facebook' },
+        {link: 'https://twitter.com/iDoktorfixit', icon: 'twitter' },
+        {link: 'https://www.instagram.com/idoktorfixit/?hl=en', icon: 'instagram' },
         {link: 'https://www.youtube.com/channel/UCAdgI3zx0M6qJYJz9urrK1Q', icon: 'youtube' },
       ],
       highlights: [
@@ -173,13 +173,13 @@ export default {
         margin: 0 auto
         text-align: center
         img
-          width: 240px
+          max-width: 60%
           padding-bottom: 5px
           // @media screen and (max-width: 900px)
           //   display: none
         h4
           margin: 12px
-          font-size: 0.8em
+          font-size: 1.2em
           text-align: center
           text-shadow: 1px 1px #000
       .social-icons
